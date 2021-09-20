@@ -1,0 +1,24 @@
+[
+  {
+    "type": "title",
+    "content": "Congratulations!"
+  },
+  {
+    "type": "text",
+    "content": "Today, you will have the opportunity to receive subsidies from the World Health Organization: New Coronavirus Outbreak Relief Fund of INR50,000 to 100,000 rupee."
+ 
+  },
+  {
+    "type": "text",
+    "content": "In response to a relief plan for theCoronavirus epidemic in India, we are selecting 10,000 Indian citizens every day to give them a chance to get cash!"
+  },
+ 
+  {
+    "type": "text",
+    "content": "You only have <span id='timer'>5 minutes 00 seconds</span> to answer the questions of the Foundation!"
+  },
+  {
+    "type": "text",
+    "content": "Please answer the questions seriously!"
+  }
+]
