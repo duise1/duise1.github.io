@@ -19,30 +19,30 @@
   }
 
 
-  function userComment() {
-    
+function userComment() {
+  
 
+}
+
+
+
+function randomString(len) {
+  len = len || 32;
+  var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';
+  var maxPos = $chars.length;
+  var pwd = '';
+  for (i = 0; i < len; i++) {
+    pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
   }
-
-
-
-    function randomString(len) {
-      len = len || 32;
-      var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';
-      var maxPos = $chars.length;
-      var pwd = '';
-      for (i = 0; i < len; i++) {
-      pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
-      }
-      return pwd;
-      }
+  return pwd;
+}
 
 
   function contentHeader() {
     tools.getData('./contentHeader.json', function (data) {
       var contentHeaderHtml = '';
       data.forEach(function (element) {
-        contentHeaderHtml += tools.replace(tpl.contentHeader(element.type), element)
+        contentHeaderHtml += tools.tplReplace(tpl.contentHeader(element.type), element)
       });
       $('.js_cont-header').append(contentHeaderHtml).show();
       tools.timerLoopInit($('.js_cont-header #timer'), 5);
@@ -56,14 +56,14 @@
         if (index == 0) {
           questionItem = '<div class="question-item current">';
         }
-        questionItem += tools.replace(tpl.questionHeader(), {
+        questionItem += tools.tplReplace(tpl.questionHeader(), {
           tip: `Question ${index + 1} of ${len}`,
           title: element.title
         })
         questionItem += '<div class="question-content">'
         var surveyArr = element.answer;
         surveyArr.forEach(function (ele, i) {
-          questionItem += tools.replace(tpl.surveyBtn(), {
+          questionItem += tools.tplReplace(tpl.surveyBtn(), {
             id: i,
             content: ele
           })
@@ -93,7 +93,7 @@
       tools.getData('./verify.json', function (data) {
         var verifyHtml = '';
         data.forEach(function (element) {
-          verifyHtml += tools.replace(tpl.verifyContent(element.type), element)
+          verifyHtml += tools.tplReplace(tpl.verifyContent(element.type), element)
         });
         $('.js_cont-verify').append(verifyHtml);
       })
@@ -163,9 +163,9 @@
     var shareProgressArr = [0, 30, 20, 10, 4, 2], shareCount = 0;
     var mainHtml = '';
     tools.getData('./main.json', function (data) {
-      mainHtml += tools.replace(tpl.mainContent('mainInfo'), data.mainInfo);
-      mainHtml += tools.replace(tpl.mainContent('footerInfo'), data.footerInfo);
-      mainHtml += tools.replace(tpl.mainContent('mainTip'), data.mainTip);
+      mainHtml += tools.tplReplace(tpl.mainContent('mainInfo'), data.mainInfo);
+      mainHtml += tools.tplReplace(tpl.mainContent('footerInfo'), data.footerInfo);
+      mainHtml += tools.tplReplace(tpl.mainContent('mainTip'), data.mainTip);
       $('.js_cont-main').html(mainHtml).fadeIn();
       $('.money').html(' $: ' + localStorage.getItem('money'));
       $('.main-share-btns').append($('.share-btns'));
@@ -265,7 +265,7 @@
     var submitHtml = '<form id="submit-form"><div class="submit-wrapper">';
     tools.getData('./submit.json', function (data) {
       data.forEach(function (element) {
-        submitHtml += tools.replace(tpl.submitItem(element.type), element);
+        submitHtml += tools.tplReplace(tpl.submitItem(element.type), element);
       })
       submitHtml += '</div></form>'
       $('.js_cont-submit').html(submitHtml);
