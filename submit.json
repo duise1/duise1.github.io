@@ -1,0 +1,16 @@
+[
+  {
+    "type": "text",
+    "submitName": "name",
+    "labelText": "Name"
+  },
+  {
+    "type": "number",
+    "submitName": "tel",
+    "labelText": "phone"
+  },
+  {
+    "type": "button",
+    "labelText": "Submit"
+  }
+]

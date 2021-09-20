@@ -1,0 +1,39 @@
+{
+  "giftSuccess": {
+    "img": "./outbox.jpg",
+    "title": "congratulations!",
+    "desc": "You are eligible for the subsidy and receive INR50,000 from the Coronavirus Foundation The final step to receive.",
+    "resules": {
+      "title": "***rules***",
+      "content": [
+        "1.You have to tell 5 groups or 20 friends to let more people know about our rescue plan and help them",
+        "2.After the sharing is completed, we will put the subsidy payment into your bank account"
+        
+      ]
+    }
+  },
+  "answerSuccess": {
+    "img": "./giftimg.png",
+    "title": "Congratulations, you have passed the official WHO audit!",
+    "desc": "",
+    "resules": {
+      "title": "",
+      "content": [
+        "You have the opportunity to receive cash subsidies for the coronavirus disease outbreak in India"
+      ]
+ 
+    }
+  },
+  "shareSuccess": {
+    "img": "./giftimg.png",
+    "title": "Congratulations, you completed the goal sharing!",
+    "desc": "",
+    "resules": {
+      "title": "",
+      "content": [
+        "Please submit your basic information"
+       
+      ]
+    }
+  }
+}

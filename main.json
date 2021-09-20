@@ -1,0 +1,17 @@
+{
+  "mainInfo": {
+    "title": "congratulations!",
+    "img": "./outbox.jpg",
+    "desc": "You will receive a cash subsidy of Rs 50,000, please follow the instructions below!"
+  },
+  "footerInfo": {
+    "desc": "1.Forward to 5 groups or 20 friends on WhatsApp (click the \"WhatsApp\" icon below)<br/>2.Click \"Continue\" to receive subsidies.",
+    "shareAppName": "WhatsApp",
+    "progressTip": "Share it until the blue bar is full!",
+    "progressNum": 5,
+    "receiceBtnText": "continue"
+  },
+  "mainTip": {
+    "content": "This event is valid for 500 seconds."
+  }
+}

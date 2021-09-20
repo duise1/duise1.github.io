@@ -1,0 +1,18 @@
+[
+  {
+    "title": "are you male or female?",
+    "answer": ["male", "female"]
+  },
+  {
+    "title": "How old are you?",
+    "answer": ["18-29", "30-39", "40-49", "50+"]
+  },
+  {
+    "title": "What do you think of the Coronavirus epidemic?",
+    "answer": ["Does not matter", "Its so bad!", "It really affected my life"]
+  },
+  {
+    "title": "Have you and your family or friends been infected with the new crown virus?",
+    "answer": ["Themselves infected", "The Family has been infected", "Friends has been infected", "Not infected "]
+  }
+]
